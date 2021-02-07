@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EnvNetTp1.Entities.Contracts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -18,16 +19,14 @@ namespace EnvNetTp1.Entities
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Column(BookContract.USER_COLUMN_ID)]
-        public long Id { get => this.id; set => this.id = value; }
-
-        [Column(BookContract.USER_COLUMN_FIRSTNAME)]
-        [Required]
-        public string name { get => this.name; set => this.name = value; }
-
-        [Column(UserContract.USER_COLUMN_LASTNAME)]
-        [Required]
-        public string Lastname { get => this.lastname; set => this.lastname = value; }
+        [Column(BookContract.COL_ID)]
+        public int Id { get; set; }
+        [Column(BookContract.COL_NAME)]
+        public string Name { get; set; }
+        [Column(BookContract.COL_NBPAGE)]
+        public int NbPage { get; set; }
+        public virtual List<Author> Authors { get; set; } = new List<Author>();
+       
 
     }
 }

@@ -5,3 +5,7 @@ D:\_DEV\VisualStudio\source\repo\EnviNetTP1\EnvNetTp1\obj\Debug\EnvNetTp1.csproj
 D:\_DEV\VisualStudio\source\repo\EnviNetTP1\EnvNetTp1\obj\Debug\EnvNetTp1.csproj.CoreCompileInputs.cache
 D:\_DEV\VisualStudio\source\repo\EnviNetTP1\EnvNetTp1\obj\Debug\EnvNetTp1.exe
 D:\_DEV\VisualStudio\source\repo\EnviNetTP1\EnvNetTp1\obj\Debug\EnvNetTp1.pdb
+D:\_DEV\VisualStudio\source\repo\EnvNetTP1\obj\Debug\EnvNetTp1.csprojAssemblyReference.cache
+D:\_DEV\VisualStudio\source\repo\EnvNetTP1\obj\Debug\EnvNetTp1.csproj.CoreCompileInputs.cache
+D:\_DEV\VisualStudio\source\repo\EnvNetTP1\obj\Debug\EnvNetTp1.exe
+D:\_DEV\VisualStudio\source\repo\EnvNetTP1\obj\Debug\EnvNetTp1.pdb

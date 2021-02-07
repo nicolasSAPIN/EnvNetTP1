@@ -10,6 +10,13 @@ namespace EnvNetTp1
     {
         static void Main(string[] args)
         {
+            using (var db = new Database.MyDbContext())
+            {
+                foreach (var item in db.Buys)
+                {
+                    Console.WriteLine(item);
+                }
+            }
         }
     }
 }
