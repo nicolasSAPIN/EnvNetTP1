@@ -12,11 +12,23 @@ namespace EnvNetTp1
         {
             using (var db = new Database.MyDbContext())
             {
-                foreach (var item in db.Buys)
+                foreach (var item in db.Books.)
                 {
                     Console.WriteLine(item);
                 }
             }
+            Console.ReadKey();
+
+            using (var db = new Database.MyDbContext())
+            {
+                foreach (var item in db.Authors)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            Console.ReadKey();
+
+
         }
     }
 }
