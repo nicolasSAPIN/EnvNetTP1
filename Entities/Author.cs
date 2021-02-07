@@ -13,12 +13,12 @@ namespace EnvNetTp1.Entities
     [Table(AuthorContract.TABLE_NAME)]
     public class Author : EntityBase
     {
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column(AuthorContract.COLUMN_ID)]
         private long id;
        
-
         [Column(AuthorContract.COLUMN_FIRSTNAME)]
         public string firstname { get; set; }
 

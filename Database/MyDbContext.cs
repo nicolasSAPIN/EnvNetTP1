@@ -27,7 +27,7 @@ namespace EnvNetTp1.Database
                 this.Authors.Add(author2);
 
                 Book book1 = new Book();
-                book1.Name = "Et après ";
+                book1.Name = "Et après";
                 book1.NbPage = 500;
                 book1.Authors.Add(author1);
 

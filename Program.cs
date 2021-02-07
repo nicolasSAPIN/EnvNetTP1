@@ -12,7 +12,7 @@ namespace EnvNetTp1
         {
             using (var db = new Database.MyDbContext())
             {
-                foreach (var item in db.Books.)
+                foreach (var item in db.Books)
                 {
                     Console.WriteLine(item);
                 }
@@ -25,6 +25,15 @@ namespace EnvNetTp1
                 {
                     Console.WriteLine(item);
                 }
+            }
+            Console.ReadKey();
+
+            // enrainement au link Query
+            // selection de l'auteur qui a ecrit le livre "Et apres".
+            using (var db = new Database.MyDbContext())
+            {
+                var QueryBookAuthor1 = db.Authors.Where(x => x.Books.Select(y => y.Name).Equals("Et après"));
+                Console.WriteLine(QueryBookAuthor1);
             }
             Console.ReadKey();
 
